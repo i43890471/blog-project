@@ -6,13 +6,8 @@ module.exports = {
     client: 'postgresql',
     connection: {
       database: 'myblog',
-<<<<<<< HEAD
       user:     'MacAir',
       password: 'byteball-gngt'
-=======
-      user:     'krijai',
-      password: 'manutd'
->>>>>>> afe117ba44332afe022300bc0e0a5a03a75cc6cb
     },
     pool: {
       min: 2,
@@ -40,12 +35,8 @@ module.exports = {
   },
 
   production: {
-    client: 'postgresql',
-    connection: {
-      database: 'myblog',
-      user:     'postgres',
-      password: 'byteball-gngt'
-    },
+    client: 'pg',
+    connection: process.env.DATABASE_URL,
     pool: {
       min: 2,
       max: 10

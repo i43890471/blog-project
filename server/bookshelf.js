@@ -2,4 +2,5 @@ import knex from 'knex';
 import bookshelf from 'bookshelf';
 import knexConfig from './knexfile';
 
-export default bookshelf(knex(knexConfig.development));
+const env = process.env.NODE_ENV || "development";
+export default bookshelf(knex(knexConfig[env]));
