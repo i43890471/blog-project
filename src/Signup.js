@@ -48,6 +48,7 @@ class Signup extends React.Component {
     return (
 
       <div className="row">
+        
       <div className="container">
       <form className="form-group form-signin" onSubmit={this._handleUserSignup}>
         <h1 className="text-center login-title">Signup</h1>

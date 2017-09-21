@@ -1,7 +1,7 @@
 {
     "proxies": {
         "/": {
-            "origin": "https://blog-idil-backend.herokuapp.com/"
+            "origin": "https://idil-backend.herokuapp.com"
         }
     }
 }
